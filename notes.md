@@ -1,4 +1,4 @@
 Notes: 
 
 Darlington Pair Transistors:
-This is a crucial IC component used in the steppor motors function. It ensures that the current that comes into the system (via raspberry pie) is boosted so it can work with lower current systems.
+This is a crucial IC component used in the stepper motors function. It ensures that the voltage that comes into the system (via raspberry pie) can turn on and off the stepper motor, by using an external battery.
