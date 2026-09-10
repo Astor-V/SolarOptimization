@@ -10,4 +10,5 @@ Some secondary objectives include:
  *  Solar tracking.
  *  Using a BJT transistor system rather than the passive diode system.
 
+This is a collaborative project with Astor Viles working on the PCB board as well as coding and Kiernan Riley working on the physical chassis
 ------------------------------------------------------------------
