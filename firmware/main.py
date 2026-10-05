@@ -2,6 +2,11 @@ from machine import I2C, Pin
 from ina219 import INA219
 import utime
 
+led = Pin(25, Pin.OUT)
+led.on()
+utime.sleep(1)
+led.off()
+
 i2c = I2C(0, scl=Pin(1), sda=Pin(0), freq=50000)
 
 SHUNT_OHMS = 0.1
@@ -34,7 +39,16 @@ while True:
 
         print(line.strip())
 
+        led.on()
+        utime.sleep(0.2)
+        led.off()
+
     except Exception as e:
         print("Read error:", e)
+        for _ in range(3):
+            led.on()
+            utime.sleep(0.1)
+            led.off()
+            utime.sleep(0.1)
 
     utime.sleep(LOG_INTERVAL_S)
